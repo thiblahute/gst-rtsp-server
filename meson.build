@@ -172,6 +172,7 @@ if get_option('default_library') == 'shared'
   plugins_pkgconfig_install_dir = disabler()
 endif
 
+plugins = []
 subdir('gst')
 if not get_option('tests').disabled()
   subdir('tests')
@@ -180,3 +181,4 @@ if not get_option('examples').disabled()
   subdir('examples')
 endif
 subdir('pkgconfig')
+subdir('docs')
